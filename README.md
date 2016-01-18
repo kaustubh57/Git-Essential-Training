@@ -16,6 +16,13 @@
 - ls -la .git : shows git config files
 - git add . : add all uncommitted changes from project. dot (.) is current directory
 - git commit -m "message" : commit changes with message
+- git log : check git commit log
+- git log -2 : restrict show commit log to last two
+- git log --since=2016-01-12 : show commits after this date
+- git log --until=2016-01-12 : show commits till this date
+- git log --author="Kaustubh" : show commits for specified author
+- git log --grep="st" : show commits having specified text
+
 
 
 
