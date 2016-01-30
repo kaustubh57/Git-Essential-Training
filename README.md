@@ -16,14 +16,41 @@
 - ls -la .git : shows git config files
 - git add . : add all uncommitted changes from project. dot (.) is current directory
 - git commit -m "message" : commit changes with message
+- git commit -am "message" : shorthand for `git add .` and `git commit -m "message"` (grabs everything. not tracked(new) and deleted files are not included)
+- git commit --amend -m "message" : this command is a convenient way to fix up the most recent commit.
 - git log : check git commit log
 - git log -2 : restrict show commit log to last two
 - git log --since=2016-01-12 : show commits after this date
 - git log --until=2016-01-12 : show commits till this date
 - git log --author="Kaustubh" : show commits for specified author
 - git log --grep="st" : show commits having specified text
+- git status : difference between working directory, the staging index and teh repository
+- git status -s
+- git reset HEAD <file> : to unstage file
+- git reset HEAD
+- git reset --soft
+- git reset --mixed : default
+- git reset --hard
+- git diff : shows difference between the repository where HEAD is pointed at Vs working directory
+- git diff <file>
+- git diff --staged : shows difference between the staging index Vs working directory
+- git diff --color-words <file> : shows only different words
+- git rm <file> : remove uncommitted file. similar to `git add`. use `git commit -m` to commit and remove file from repository.
+- git mv <orig_file> <newname_file> : rename file
+- git checkout -- <file> : to discard changes in working directory. "--" indicates from current branch only.
+- git checkout <SHA-key> -- <file> : revert to that SHA version
+- git revert <SHA> : revert and commit
+- git revert -n <SHA> : revert and not committed
 
 
+
+
+
+## Notes
+- SHA or SHA1 : Secure Hash Algorithm (1) https://en.wikipedia.org/wiki/SHA-1
+- toggle between long commits : forward (f) or backward (b). space bar or enter to see more details
+- toggle fold long lines : minus sign (-) + shift + S + return. wrap it around instead of lines being truncated.
+- to return to long lines (unwrap) : minus sign (-) + S + return
 
 
 ## Contents
@@ -79,6 +106,13 @@ http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
     - Editing the backpack file name and links
     
 7. Undoing Changes
-    
-- Conclusion
-    - Next steps
+    - Undoing working directory changes
+    - Unstaging files
+    - Amending commits
+    - Retrieving old versions
+    - Reverting a commit
+    - Using reset to undo commits
+    - Demonstrating a soft reset
+    - Demonstrating a mixed reset
+    - Demonstrating a hard reset
+    - Removing untracked files
