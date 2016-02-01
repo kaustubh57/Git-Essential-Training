@@ -41,6 +41,8 @@
 - git checkout <SHA-key> -- <file> : revert to that SHA version
 - git revert <SHA> : revert and commit
 - git revert -n <SHA> : revert and not committed
+- git clean -n : test run of `git clean`
+- git clean -f : final run of `git clean`
 
 
 
@@ -51,7 +53,8 @@
 - toggle between long commits : forward (f) or backward (b). space bar or enter to see more details
 - toggle fold long lines : minus sign (-) + shift + S + return. wrap it around instead of lines being truncated.
 - to return to long lines (unwrap) : minus sign (-) + S + return
-
+- cat .git/master : points to where HEAD (SHA) is located
+- cat .git/refs/heads/master : points to where HEAD (SHA) is located
 
 ## Contents
 http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
