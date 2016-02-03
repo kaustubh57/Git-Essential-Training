@@ -11,6 +11,7 @@
 - git config : project level configuration
 - git config --global user.name "[NAME]"
 - git config --list : list of config properties
+- git config --global core.excludefile ~/.gitignore_global : global config for gitignore
 - git --help
 - git init : initialize repository
 - ls -la .git : shows git config files
@@ -36,6 +37,7 @@
 - git diff --staged : shows difference between the staging index Vs working directory
 - git diff --color-words <file> : shows only different words
 - git rm <file> : remove uncommitted file. similar to `git add`. use `git commit -m` to commit and remove file from repository.
+- git rm --cached <file> : remove from caching (or staging index)
 - git mv <orig_file> <newname_file> : rename file
 - git checkout -- <file> : to discard changes in working directory. "--" indicates from current branch only.
 - git checkout <SHA-key> -- <file> : revert to that SHA version
@@ -46,8 +48,6 @@
 
 
 
-
-
 ## Notes
 - SHA or SHA1 : Secure Hash Algorithm (1) https://en.wikipedia.org/wiki/SHA-1
 - toggle between long commits : forward (f) or backward (b). space bar or enter to see more details
@@ -55,6 +55,8 @@
 - to return to long lines (unwrap) : minus sign (-) + S + return
 - cat .git/master : points to where HEAD (SHA) is located
 - cat .git/refs/heads/master : points to where HEAD (SHA) is located
+- project/.gitignore : file to specify which files or directory to ignore
+- .gitkeep : use this file to track empty folder
 
 ## Contents
 http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
