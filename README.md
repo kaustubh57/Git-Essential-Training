@@ -77,6 +77,7 @@
 - git branch -m [branch-new-name] : rename branch
 - git checkout [branch-name] : change working directory to specified branch name
 - git checkout -b [branch-name] : create and checkout at the same time for new branch
+- git merge [branch-name] : merge specified branch to current working branch
 
 
 
@@ -185,3 +186,34 @@ http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
     - Merging conflicts
     - Resolving merge conflicts
     - Exploring strategies to reduce merge conflicts
+
+12. Stashing Changes
+    - Saving changes in the stash
+    - Viewing stashed changes
+    - Retrieving stashed changes
+    - Deleting stashed changes
+
+13. Remotes
+    - Using local and remote repositories
+    - Setting up a GitHub account
+    - Adding a remote repository
+    - Creating a remote branch
+    - Cloning a remote repository
+    - Tracking remote branches
+    - Pushing changes to a remote repository
+    - Fetching changes from a remote repository
+    - Merging in fetched changes
+    - Checking out remote branches
+    - Pushing to an updated remote branch
+    - Deleting a remote branch
+    - Enabling collaboration
+    - A collaboration workflow
+
+14. Tools and Next Steps
+    - Setting up aliases for common commands
+    - Using SSH keys for remote login
+    - Exploring integrated development environments
+    - Exploring graphical user interfaces
+    - Understanding Git hosting
+
+15. Conclusion
