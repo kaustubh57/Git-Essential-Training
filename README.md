@@ -75,10 +75,12 @@
 - git branch -d [branch-name] : delete branch (before this make sure you are not working on this branch)
 - git branch -D [branch-name] : force delete branch
 - git branch -m [branch-new-name] : rename branch
+- git branch --merged :To see which branches are already merged into the branch you’re on
+- git branch --no-merged : To see all the branches that contain work you haven’t yet merged in
 - git checkout [branch-name] : change working directory to specified branch name
 - git checkout -b [branch-name] : create and checkout at the same time for new branch
 - git merge [branch-name] : merge specified branch to current working branch
-
+- git merge --no-ff branch : no fast forward. create new commit 
 
 
 ## Notes
