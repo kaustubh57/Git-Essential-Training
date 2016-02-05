@@ -12,6 +12,7 @@
 - git config --global user.name "[NAME]"
 - git config --list : list of config properties
 - git config --global core.excludefile ~/.gitignore_global : global config for gitignore
+- git config --global alias.[shortcut] [git-command] : shortcut for git command
 - git --help
 - git init : initialize repository
 - ls -la .git : shows git config files
@@ -77,10 +78,36 @@
 - git branch -m [branch-new-name] : rename branch
 - git branch --merged :To see which branches are already merged into the branch you’re on
 - git branch --no-merged : To see all the branches that contain work you haven’t yet merged in
+- git branch -r : shows remote branches
+- git branch -a : shows local and remote branches
+- git branch [local-branch-name] [remote-branch-name] : creates new branch and tracking is set to the remote branch
 - git checkout [branch-name] : change working directory to specified branch name
 - git checkout -b [branch-name] : create and checkout at the same time for new branch
+- git checkout -b [local-branch-name] [remote-branch-name] : creates and checkout new branch and tracking is set to the remote branch
 - git merge [branch-name] : merge specified branch to current working branch
-- git merge --no-ff branch : no fast forward. create new commit 
+- git merge --no-ff [branch-name] : no fast forward. create new commit
+- git merge -ff-only [branch-name] : do merge only for fast forward else abort
+- git merge --abort : abort the current merge
+- git stash save "message" : stash current changes
+- git stash list : shows list of items are in stash
+- git stash show stash@{NUMBER} : shows the details of that number
+- git stash show -p stash@{NUMBER} : shows the details of that number (more descriptive with -p option)
+- git stash pop : checkout changes are removes the stash
+- git stash apply : only checkout changes. keeps in the stash as well
+- git stash drop stash@{NUMBER} : delete the specified stash
+- git stash clear : clears the stash list
+- git remote : alias for remote branch
+- git remote add [alias] [remote-url] : add alias for remote url
+- git remote -v : more details about remote branch
+- git push -u [remote-alias] [branch-name] : push code changes to remote repository. -u option to track remote branch
+- git push : push current commits of the same branch to the origin (remote) branch
+- git push origin :[remote-branch-name] : deletes the branch from remote
+- git push origin --delete [remote-branch-name] : similar to `git push origin :[remote-branch-name]` 
+- git clone [git-remote-url] : creates with default folder
+- git clone [git-remote-url] [folder-name] : creates folder to clone remote repository
+- git fetch origin : sync (fetch) remote branch with local branch
+- git fetch --all : sync (fetch) all remote branches with local branches
+- git pull === git fetch + git merge
 
 
 ## Notes
@@ -92,6 +119,7 @@
 - cat .git/refs/heads/master : points to where HEAD (SHA) is located
 - project/.gitignore : file to specify which files or directory to ignore
 - .gitkeep : use this file to track empty folder
+- remote url details can be found at `.git/config` file
 
 ## Contents
 http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
