@@ -1,6 +1,6 @@
 # Git-Essential-Training
 
-## Commands
+## Git Commands
 - which git
 - git --version
 - vi /etc/gitconfig
@@ -109,6 +109,11 @@
 - git fetch --all : sync (fetch) all remote branches with local branches
 - git pull === git fetch + git merge
 
+## Git flow Commands
+- git flow init -d : initialise git flow
+- git flow feature start [feature-branch-name] : creates new feature branch
+- git flow feature publish [feature-branch-name] : publish feature branch to remote repository
+- git flow feature finish [feature-branch-name] : it deletes as well.
 
 ## Notes
 - SHA or SHA1 : Secure Hash Algorithm (1) https://en.wikipedia.org/wiki/SHA-1
