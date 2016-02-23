@@ -1,2 +1,3 @@
 contents added in branch two.
 second line added - first time.
+third line added from branch one.
