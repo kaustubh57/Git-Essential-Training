@@ -43,6 +43,7 @@
 - git reset --soft
 - git reset --mixed : default
 - git reset --hard
+- git reset --hard [SHA] : reverted to the specified SHA version
 - git diff : shows difference between the repository where HEAD is pointed at Vs working directory
 - git diff [file]
 - git diff --staged : shows difference between the staging index Vs working directory
