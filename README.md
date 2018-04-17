@@ -127,6 +127,14 @@
 - .gitkeep : use this file to track empty folder
 - remote url details can be found at `.git/config` file
 
+## Git cherry-pick
+- Cherry picking in git means to choose a commit from one branch and apply it onto another.
+- This is in contrast with other ways such as merge and rebase which normally apply many commits onto another branch.
+    1. Make sure you are on the branch you want to apply the commit to.
+        `git checkout master`
+    2. Execute the following:
+        `git cherry-pick <commit-hash>`
+
 ## Contents
 http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
 
