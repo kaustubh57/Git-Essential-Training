@@ -135,6 +135,9 @@
     2. Execute the following:
         `git cherry-pick <commit-hash>`
 
+## Git Windows command
+- git add --chmod=+x [FILE] : To mark file executable
+
 ## Contents
 http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html
 
